@@ -1,0 +1,41 @@
+.box{
+    width:100px;
+    
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.relative{
+    position: relative;
+  
+    left: 20px;
+}
+
+.absolute_wrapper{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: 1px dashed black;
+    padding: 50px;
+}
+.absolute_wrapper .absolute{
+    position: absolute;
+    padding :15px;
+    width:100px;
+    top: 0;
+    left:0;
+    background-color: lime;
+}
+.fixed{
+    background-color: blue;
+    position: fixed;
+    bottom: 20px;;
+
+}
+
+.sticky{
+    position: sticky;
+    background-color: yellow;
+    top: 0px;
+}

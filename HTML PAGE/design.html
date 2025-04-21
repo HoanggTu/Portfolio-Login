@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./mushokutensei.png">
+    <link rel="stylesheet" href="./card.html">
+    <link rel="stylesheet" href="./forgot.html">
+    <link rel="stylesheet" href="./style.css">
+    <title>pla pla</title>
+    <style>
+       
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div>
+        <div class="container">
+            <div id="login-form_line"></div>
+            <div class="login-form">
+                <label for="Login">LOGIN</label>
+                <div id="bar_h"></div>
+                <input type="text" placeholder="Enter user's name..." id="username">
+                <input type="password" placeholder="password..." id="userpass">
+                <button class="button" onclick="validate()">LOGIN</button> 
+                <div id="error"></div>
+                <div id="bar_h"></div>
+                <a href="https://www.facebook.com/bui.van.phuong.419920" id="forgot_"  target="_blank" rel="noopener noreferrer">Forgot?</a>
+                <a href="https://www.facebook.com/Junn.Nguy3n/map" id="register_">Register</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validate() {
+        const username = document.getElementById("username");
+    const password = document.getElementById("userpass");
+    const error = document.getElementById("error");
+    if (username.value.trim() === "" || password.value.trim() === "") {
+        error.innerHTML = "Vui lòng nhập đầy đủ tên và mật khẩu!";
+        error.style.animation="none";
+        error.offsetHeight;
+        error.style.animation = "pop 0.3s ease";
+        error.style.color = "red";
+    } else if (password.value==="zacc147193"&&username.value==="ngovanhoangtu") {
+       
+        error.innerHTML = `Hello ${username.value}! {ADMIN}`;
+        error.style.animation="none";
+        error.offsetHeight;
+        error.style.animation = "pop 0.3s ease";
+        error.style.color = "green";
+        setTimeout(function() {
+            window.location.href="";
+        }, 1000);
+    }else {
+        error.innerHTML ="Sai Tên hoặc mật khẩu!";
+        error.style.animation="none";
+        error.offsetHeight;
+        error.style.animation = "pop 0.3s ease";
+        error.style.color = "red";
+    }
+}
+document.addEventListener("keydown",function(e){
+    if(e.key==="Enter") {
+        validate();
+    }
+});
+    </script>
+</body>
+</html>
