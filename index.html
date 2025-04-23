@@ -22,21 +22,21 @@
       <div class="card a">
         <h3>Dự án 1</h3>
         <p>Website coding, responsive, sử dụng HTML/CSS và một chút JavaScript.</p>
-        <button class="button start">let's start
+        <button class="button start contactBtn" id="contactBtn" onclick="window.location.href='card.html'">let's start
           <i class="fa-solid fa-rocket"></i>
       </button>
       </div>
       <div class="card b">
         <h3>Dự án 2</h3>
         <p>Portfolio cá nhân của tôi, tập trung vào bố cục sạch và dễ đọc.</p>
-        <button class="button readmore">About me
+        <button class="button readmore contactBtn" id="contactBtn" onclick="window.location.href='card.html'">About me
           <i class="fa-solid fa-book"></i>
         </button>
       </div>
       <div class="card c">
         <h3>Dự án 3</h3>
         <p>Trang login đẹp mắt có hiệu ứng hover, animation cơ bản cho beginners.</p>
-        <button class="button byme">conntact with me
+        <button class="button byme contactBtn" id="contactBtn" onclick="window.location.href='card.html'">conntact with me
           <i class="fa-solid fa-rocket"></i>
         </button>
       </div>
@@ -51,10 +51,20 @@
                <a href="https://github.com/settings/profile"><i class="fab fa-github"></i></a>
              </div> 
          </div>
-  
+         
          <p>Ngo Van Hoang Tu. All rights reserved.</p>
     </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
    </div>
+   <script>
+    document.getElementById("contactBtn").addEventListener("click", function() {
+        if (localStorage.getItem("isLoggedIn") === "true") {
+            window.location.href = "card.html";
+        } else {
+            alert("Vui lòng đăng nhập trước khi tiếp tục.");
+        }
+    });
+    </script>
+    
 </body>
 </html>
