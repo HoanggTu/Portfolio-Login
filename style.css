@@ -64,7 +64,14 @@ header {
     top:5vh;
     right:5vh;
   }
-
+.bar{
+    display: none;
+    position:absolute;
+    top:30px;
+    right:20px;
+    font-size : 30px;
+   
+  }
 .first{background-image: linear-gradient(to right, #abbaab 0%, #ffffff  51%, #abbaab  100%)}
 .first {
      margin: 10px;
@@ -169,7 +176,7 @@ header p {
 
 .card p {
     color: #F8CDDA;
-    font-size: 0.95rem;
+    font-size: clamp(14px, 2.5vw, 18px);
   }
 button{
     padding: 12px 30px;
@@ -287,11 +294,7 @@ footer {
     color: #0f1011;
     transform: scale(1.2);
   }
-  .bar{
-    display: none;
-    font size:30px;
-    padding:10px 30px 30px 330px;
-  }
+
 @media (max-width:800px ){
   .bg-animation header div,
   .bg-animation header button {
@@ -312,11 +315,28 @@ footer {
 
   } */
 }
-@media(max-width:510px) {
+@media(max-width:530px) {
   .card{
+    width: 90%;
     width:430px;
     height:fit-content;
+    margin: 0 auto;
   }
-  
+@media (max-width: 440px) {
+    .card {
+      max-width: 340px;
+    }
+  }  
 } 
+@media(max-width:340px) {
+  .card{
+    width: 90%;
+    width:250px;
+    height:fit-content;
+    margin: 0 auto;
+  }
+  h1 p{
+    font-size:3.75rem;
+  } 
+}
 /*     login     */
