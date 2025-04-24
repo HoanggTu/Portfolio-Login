@@ -45,16 +45,42 @@ body {
   }
 
   
-  header {
+header {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     color: #666;
     padding: 30px 0px;
   }
-  
+  header .button{
+    position:absolute;
+    top:5vh;
+    right:5vh;
+  }
+
+.first{background-image: linear-gradient(to right, #abbaab 0%, #ffffff  51%, #abbaab  100%)}
+.first {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: rgb(113, 104, 104);            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+
+.first:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+}
+   
 header h1{
     
     width:0ch;

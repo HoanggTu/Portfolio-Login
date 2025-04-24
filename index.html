@@ -12,10 +12,13 @@
   </style>
 </head>
 <body>
-   <div class="bg-animation">
+  <div class="bg-animation">
     <header>
-      <h1>Ngo Van Hoang Tu</h1>
-      <p>Front-End Developer | HTML, CSS, JavaScript</p>
+      <div>
+        <h1>Ngo Van Hoang Tu</h1>
+        <p>Front-End Developer | HTML, CSS, JavaScript</p>
+      </div>
+      <button class="button first contactBtn" id="contactBtn" onclick="window.location.href='card.html'">log in</button>
     </header>
   
     <section class="container">
@@ -46,16 +49,16 @@
          <div class="relative">
              <div class="social-icons">
               <a href="https://www.facebook.com/hoang.tu.328535/"><i class="fa-brands fa-facebook"></i></a>
-               <a href="https://www.instagram.com/_bacxiunhiusuatuoi/"><i class="fab fa-instagram"></i></a>
-               <a href=""><i class="fab fa-linkedin"></i></a>
-               <a href="https://github.com/settings/profile"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/_bacxiunhiusuatuoi/"><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/settings/profile"><i class="fab fa-github"></i></a>
              </div> 
          </div>
          
-         <p>Ngo Van Hoang Tu. All rights reserved.</p>
+         <p>© Ngo Van Hoang Tu. All rights reserved.</p>
     </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-   </div>
+  </div>
    <script>
     document.getElementById("contactBtn").addEventListener("click", function() {
         if (localStorage.getItem("isLoggedIn") === "true") {
