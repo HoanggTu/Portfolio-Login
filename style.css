@@ -15,7 +15,6 @@ body {
   color: #333;
   height:100vh;
 
-  
 }
 .bg-animation {
     height: 100vh;
@@ -42,8 +41,13 @@ body {
     100% {
       background-position: 50% 50%; /* quay về dưới */
     }
-  }
-
+}
+#particles-js{
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index: -3;
+}
   
 header {
     display: flex;
@@ -218,14 +222,14 @@ button{
    display: block;
  }
 
- .readmore:hover {
+.readmore:hover {
    background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
  }
  
- .byme {background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%)}
- .byme {
+.byme {background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%)}
+.byme {
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -238,7 +242,7 @@ button{
     display: block;
   }
 
-  .byme:hover {
+.byme:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
@@ -255,7 +259,7 @@ footer {
     color: #888;
     
   }
-  .relative{
+.relative{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -265,7 +269,7 @@ footer {
     padding: 0 200px;
 
   }
-  .social-icons{
+.social-icons{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -273,14 +277,46 @@ footer {
     gap:10px;
     transition: 1s all;
   }
-  .social-icons a {
+.social-icons a {
 
     color:#888;
     cursor: pointer;text-decoration: none;
     border: none;
   }
-  .social-icons a:hover {
+.social-icons a:hover {
     color: #0f1011;
     transform: scale(1.2);
   }
+  .bar{
+    display: none;
+    font size:30px;
+    padding:10px 30px 30px 330px;
+  }
+@media (max-width:800px ){
+  .bg-animation header div,
+  .bg-animation header button {
+    display:none;
+  
+  }
+  .bg-animation header .bar{
+    display: block;
+  }
+  section {
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+  }
+  /* .content{
+
+  } */
+}
+@media(max-width:510px) {
+  .card{
+    width:430px;
+    height:fit-content;
+  }
+  
+} 
 /*     login     */

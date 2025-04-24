@@ -12,6 +12,7 @@
   </style>
 </head>
 <body>
+  <div id="particles-js"></div>
   <div class="bg-animation">
     <header>
       <div>
@@ -19,8 +20,11 @@
         <p>Front-End Developer | HTML, CSS, JavaScript</p>
       </div>
       <button class="button first contactBtn" id="contactBtn" onclick="window.location.href='card.html'">log in</button>
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
-  
+    
     <section class="container">
       <div class="card a">
         <h3>Dự án 1</h3>
@@ -59,7 +63,7 @@
     </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </div>
-   <script>
+  <script>
     document.getElementById("contactBtn").addEventListener("click", function() {
         if (localStorage.getItem("isLoggedIn") === "true") {
             window.location.href = "card.html";
@@ -68,6 +72,8 @@
         }
     });
     </script>
-    
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+  <script src="./app.js"></script>  
 </body>
 </html>
