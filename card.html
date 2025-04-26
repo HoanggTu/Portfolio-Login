@@ -172,8 +172,8 @@ margin:5px;
         </div>
     </div>
     <script>
-        function validate() {
-        const username = document.getElementById("username");
+    function validate() {
+    const username = document.getElementById("username");
     const password = document.getElementById("userpass");
     const error = document.getElementById("error");
     if (username.value.trim() === "" || password.value.trim() === "") {
@@ -182,7 +182,7 @@ margin:5px;
         error.offsetHeight;
         error.style.animation = "pop 0.3s ease";
         error.style.color = "red";
-    } else if (password.value==="zacc147193"&&username.value==="ngovanhoangtu") {
+    } else if (password.value==="zacc147193"&& username.value==="ngovanhoangtu") {
        
         error.innerHTML = `Hello ${username.value}! {ADMIN}`;
         error.style.animation="none";
@@ -190,7 +190,7 @@ margin:5px;
         error.style.animation = "pop 0.3s ease";
         error.style.color = "green";
         setTimeout(function() {
-            window.location.href="card.html";
+            window.location.href="slideshow.html";
         }, 1000);
     }else {
         error.innerHTML ="Sai Tên hoặc mật khẩu!";

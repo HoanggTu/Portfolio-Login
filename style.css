@@ -21,7 +21,10 @@ body {
     width: 100vw;
     /* background-image: radial-gradient( circle bottom center 10% 20%,  rgba(151,41,247,1) 0%, rgba(24,22,39,1) 90% ); */
     /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */
-
+    /* background: linear-gradient(135deg,  #1e1e2f, #3a2b58, #1f1c2c); /* Gradient xanh dương không gian */
+    /* background-size: cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif; */ 
     /* background: radial-gradient(circle,rgba(2, 0, 36, 1)10%, rgba(9, 9, 121, 1) 43%, rgba(84, 40, 138, 1) 100%); */
     /* #03045E, #0077B6,#00B4D8,#90E0EF,#CAF0F8 #7f0e8e */
     background-size: 400% 400%;
@@ -282,18 +285,23 @@ footer {
     align-items: flex-end;
     padding-bottom: 5px;
     gap:10px;
-    transition: 1s all;
   }
 .social-icons a {
 
     color:#888;
     cursor: pointer;text-decoration: none;
     border: none;
+    transition: 1s all;
   }
 .social-icons a:hover {
     color: #0f1011;
     transform: scale(1.2);
   }
+
+p{
+  font-size: clamp(10.2px, 2.5vw, 14.4px);
+
+}
 
 @media (max-width:800px ){
   .bg-animation header div,
@@ -322,12 +330,22 @@ footer {
     height:fit-content;
     margin: 0 auto;
   }
+  footer .relative .social-icons{
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 440px) {
     .card {
       max-width: 340px;
     }
+    footer .relative .social-icons{
+      max-width: 150px;
+      margin: 0 auto;
+    }
   }  
-} 
+
 @media(max-width:340px) {
   .card{
     width: 90%;
@@ -335,8 +353,6 @@ footer {
     height:fit-content;
     margin: 0 auto;
   }
-  h1 p{
-    font-size:3.75rem;
-  } 
+
 }
 /*     login     */
